@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: overlay;
+        }
+
+        header {
+            color: #ffffff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section-box { 
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: none;
+        }
+
+        .property {
+            border: 1px solid #dddddd;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .property img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .property-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .property {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 3rem; text-align: left;">Real Estate</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="section-box" style="text-align: center;">
+            <h2 style="font-size: 2.5rem;">About Us</h2>
+            <p style="font-size: 1.5rem;">Welcome to our Real Estate Website. We are dedicated to helping you find your dream home. Our team of experienced real estate agents is here to assist you with all your property needs.
+            Whether you are looking to buy, sell, or rent, we have a wide range of properties to suit your requirements. Our mission is to provide you with the best service and make your real estate experience as smooth as possible.</p>
+        </section>
+        <section id="listings" class="section-box">
+            <h2 style="text-align: center;font-size: 2.5rem;">Available Properties</h2>
+            <div class="property-container">
+                <div class="property">
+                    <img src="house1.jpg" alt="House 1">
+                    <h3>Beautiful Family House</h3>
+                    <p>Price: $500,000</p>
+                </div>
+                <div class="property">
+                    <img src="house2.jpg" alt="House 2">
+                    <h3>Modern Apartment</h3>
+                    <p>Price: $300,000</p>
+                </div>
+                <div class="property">
+                    <img src="house3.jpeg" alt="House 3">
+                    <h3>Cozy Cottage</h3>
+                    <p>Price: $250,000</p>
+                </div>
+                <div class="property">
+                    <img src="house4.jpg" alt="House 4">
+                    <h3>Luxury Villa</h3>
+                    <p>Price: $1,200,000</p>
+                </div>
+                <div class="property">
+                    <img src="house5.jpeg" alt="House 5">
+                    <h3>Suburban Home</h3>
+                    <p>Price: $450,000</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section-box" style="text-align: center;">
+            <div style="padding: 20px; border-radius: 10px; border: 1px solid #ccc; background-color: rgba(255, 255, 255, 0.5);">
+            <h2 style="font-size: 2.5rem;">Contact Us</h2>
+            <p style="font-size: 1.5rem; color: #000; animation: scrollText 10s linear infinite;">
+            If you have any questions or would like to get in touch with us, please fill out the form below or contact us at:
+            </p>
+            
+            <p>Email: info@realestatewebsite.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <form>
+            <div style="margin-bottom: 5px;">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" style="width: 50%; padding: 8px; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 5px;">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" style="width: 50%; padding: 8px; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 5px;">
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" style="width: 50%; padding: 8px; box-sizing: border-box;"></textarea>
+            </div>
+            <input type="submit" value="Submit" style="padding: 10px 20px; background-color: #35424a; color: #ffffff; border: none; cursor: pointer;">
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer style="padding: 6px 2px; text-align: center;">
+        <p style="text-align: center;">&copy; 2023 Real Estate Website</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // JavaScript code for interactivity can be added here
+        });
+    </script>
+</body>
+</html>
